@@ -1,4 +1,4 @@
-open Lib.Power
+open Lib.Sum_of_square
 
-let kekka = power 3 0 = 1 && power 3 1 = 3 && power 3 2 = 9 && power 3 3 = 27
+let kekka = sum_of_square 0 = 0 && sum_of_square 1 = 1 && sum_of_square 4 = 30
 let () = print_int (if kekka then 1 else 0)
