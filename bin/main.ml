@@ -1,4 +1,4 @@
-open Lib.Fac
+open Lib.Power
 
-let kekka = fac 0 = 1 && fac 1 = 1 && fac 4 = 24 && fac 10 = 3628800
+let kekka = power 3 0 = 1 && power 3 1 = 3 && power 3 2 = 9 && power 3 3 = 27
 let () = print_int (if kekka then 1 else 0)
