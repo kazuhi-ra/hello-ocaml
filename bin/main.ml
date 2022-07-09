@@ -1,4 +1,10 @@
-open Lib.Sum_of_square
+open Lib.Zenkashiki
 
-let kekka = sum_of_square 0 = 0 && sum_of_square 1 = 1 && sum_of_square 4 = 30
+let kekka =
+  zenkashiki 0 = 3
+  && zenkashiki 1 = 5
+  && zenkashiki 2 = 9
+  && zenkashiki 3 = 17
+  && zenkashiki 4 = 33
+
 let () = print_int (if kekka then 1 else 0)
