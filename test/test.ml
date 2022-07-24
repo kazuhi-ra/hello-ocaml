@@ -7,6 +7,7 @@ let all_tests =
          Romaji_to_kanji_test.tests;
          Get_ekikan_kyori_test.tests;
          Kyori_wo_hyoji_test.tests;
+         Make_eki_list_test.tests;
        ]
 
 let () = run_test_tt_main all_tests
