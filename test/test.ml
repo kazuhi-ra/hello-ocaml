@@ -9,6 +9,7 @@ let all_tests =
          Kyori_wo_hyoji_test.tests;
          Make_eki_list_test.tests;
          Shokika_test.tests;
+         Ins_sort_test.tests;
        ]
 
 let () = run_test_tt_main all_tests
