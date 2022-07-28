@@ -12,6 +12,7 @@ let all_tests =
          Ins_sort_test.tests;
          Seiretsu_test.tests;
          Koushin1_test.tests;
+         Koushin1_test.tests;
        ]
 
 let () = run_test_tt_main all_tests
