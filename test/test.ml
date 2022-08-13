@@ -11,8 +11,7 @@ let all_tests =
          Shokika_test.tests;
          Ins_sort_test.tests;
          Seiretsu_test.tests;
-         Koushin1_test.tests;
-         Koushin1_test.tests;
+         Koushin_test.tests;
        ]
 
 let () = run_test_tt_main all_tests
