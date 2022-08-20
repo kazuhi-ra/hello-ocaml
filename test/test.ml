@@ -14,6 +14,7 @@ let all_tests =
          Koushin_test.tests;
          Make_initial_eki_list_test.tests;
          Quick_sort_test.tests;
+         Saitan_wo_bunri_test.tests;
        ]
 
 let () = run_test_tt_main all_tests
