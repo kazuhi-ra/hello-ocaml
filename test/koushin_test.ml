@@ -1,6 +1,7 @@
 open OUnit2
 open Lib.Make_eki_list
 open Lib.Koushin
+open Lib.Ekikan
 
 let eki1 = { namae = "池袋"; saitan_kyori = infinity; temae_list = [] }
 
@@ -10,11 +11,14 @@ let eki3 = { namae = "茗荷谷"; saitan_kyori = 0.; temae_list = [ "茗荷谷" 
 
 let eki4 = { namae = "後楽園"; saitan_kyori = infinity; temae_list = [] }
 let lst = [ eki1; eki2; eki3; eki4 ]
-let test1 = "koushin" >:: fun _ -> assert_equal (koushin eki2 []) []
+
+let test1 =
+  "koushin" >:: fun _ -> assert_equal (koushin eki2 [] global_ekikan_list) []
 
 let test2 =
   "koushin" >:: fun _ ->
-  assert_equal (koushin eki2 lst)
+  assert_equal
+    (koushin eki2 lst global_ekikan_list)
     [
       { namae = "池袋"; saitan_kyori = 3.0; temae_list = [ "池袋"; "新大塚"; "茗荷谷" ] };
       eki2;
