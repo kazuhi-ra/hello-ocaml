@@ -16,6 +16,7 @@ let all_tests =
          Quick_sort_test.tests;
          Saitan_wo_bunri_test.tests;
          Dijkstra_main_test.tests;
+         Dijkstra_test.tests;
        ]
 
 let () = run_test_tt_main all_tests

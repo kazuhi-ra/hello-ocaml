@@ -1,6 +1,5 @@
 open Ekimei
-
-type eki_t = { namae : string; saitan_kyori : float; temae_list : string list }
+open Make_eki_list
 
 let make_initial_eki_list ekimei_list kiten_kanji =
   List.map
