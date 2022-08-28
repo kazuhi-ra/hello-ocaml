@@ -21,6 +21,7 @@ let all_tests =
          Tree_boudle_test.tests;
          Tree_map.tests;
          Tree_length.tests;
+         Tree_depth.test4;
        ]
 
 let () = run_test_tt_main all_tests
