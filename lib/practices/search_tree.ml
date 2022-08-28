@@ -1,7 +1,7 @@
-type binary_search_tree_t =
+type 'a binary_search_tree_t =
   | Empty
-  | Leaf of int
-  | Node of binary_search_tree_t * int * binary_search_tree_t
+  | Leaf of 'a
+  | Node of 'a binary_search_tree_t * 'a * 'a binary_search_tree_t
 
 let rec search_tree tree n =
   match tree with

@@ -1,4 +1,4 @@
-type tree_t = Empty | Leaf of int | Node of tree_t * int * tree_t
+type 'a tree = Empty | Leaf of 'a | Node of 'a tree * 'a * 'a tree
 
 let rec sum_tree tree =
   match tree with
