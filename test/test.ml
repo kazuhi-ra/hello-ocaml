@@ -17,6 +17,7 @@ let all_tests =
          Saitan_wo_bunri_test.tests;
          Dijkstra_main_test.tests;
          Dijkstra_test.tests;
+         Sum_tree_test.tests;
        ]
 
 let () = run_test_tt_main all_tests
