@@ -23,6 +23,7 @@ let all_tests =
          Tree_length.tests;
          Tree_depth.test4;
          Search_tree.tests;
+         Insert_tree_test.tests;
        ]
 
 let () = run_test_tt_main all_tests
