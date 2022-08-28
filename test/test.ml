@@ -20,6 +20,7 @@ let all_tests =
          Sum_tree_test.tests;
          Tree_boudle_test.tests;
          Tree_map.tests;
+         Tree_length.tests;
        ]
 
 let () = run_test_tt_main all_tests
