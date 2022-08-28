@@ -19,6 +19,7 @@ let all_tests =
          Dijkstra_test.tests;
          Sum_tree_test.tests;
          Tree_boudle_test.tests;
+         Tree_map.tests;
        ]
 
 let () = run_test_tt_main all_tests
